@@ -16,6 +16,41 @@ body{
 	position: relative;
 }
 /* header*/
+#heading{
+	height: 170px;
+	text-align: center;
+	background-image: url(../images/heading.JPG);
+	background-size: cover;
+}
+#headName{
+	font-family: 'Playball', cursive;
+	color: rebeccapurple;
+	font-size: 72px;
+}
+/* Navigational menu*/
+#homeNav{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 1;
+	box-shadow: 0 4px 5px grey;
+	font-size: 18px;
+}
+#otherNav{
+	width: 100%;
+	z-index: 1;
+	box-shadow: 0 4px 5px grey;
+	font-size: 18px;
+}
+.affix {
+      top: 0;
+      width: 100%;
+  }
+#headLine{
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 40px;
+	color: white;
+}
 #name{
 	width: 100%;
 	position: absolute;
@@ -89,7 +124,7 @@ img.coupon{
 	width: 420px;
 	height: 280px;
 	position: fixed;
-	top: 200px;
+	top: 240px;
 	animation-name: fade;
 	animation-duration: 5s;
 	animation-timing-function: ease;
@@ -105,7 +140,7 @@ img.coupon{
 }
 #rightSlide{
 	position: absolute;
-	top: 50px;
+	top: 270px;
 	height: 350px;
 }
 /*Working*/
@@ -126,27 +161,17 @@ img.steps{
 	height: 100px;
 	display: block;
 }
-img.location{
+#locationMap, ng-map{
 	height: 350px;
 	width: 100%;
 }
 section{
 	position: relative;
-	min-height: 600px; 
+	min-height: 750px; 
 	height: 100%;
 	width: 100%; 
-	padding: 10px 0;
-	margin:40px 0;
-}
-/* Navigational menu*/
-.navbar{
-	position: fixed;
-	width: 100%;
-	top: 0px;
-	z-index: 1;
-	box-shadow: 0 4px 5px grey;
-	margin-bottom: 100px;
-	font-size: 18px;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
 }
 /* About Page*/
 #about .novels{
@@ -195,11 +220,6 @@ align-content: space-between;
 .alert, .btn{
 	margin: 10px;
 }
-img.item {
-    width: 100%;
-	height:600px;
-	margin: 10px 0;
-        }
 table.give{
 	max-width: 500px;
 	margin: 10px auto;
@@ -211,6 +231,13 @@ table.give{
 .address{
 	width: 30%;
 }
+#myCarousel{
+	z-index: -1;
+}
+.carousel-inner > .item > img {
+    width: 100%;
+	height:600px;
+        }
 /* Footer content*/
 footer{
 	background-color: plum;
@@ -220,6 +247,7 @@ footer{
 	color: white; 
 	font-size: 16px; 
 	padding: 15px;
+	margin-top: 20px;
 }
 #policy a{
 	text-align: center;
@@ -248,7 +276,7 @@ fieldset{
             display: inline-block;
             list-style: none;
         }
-        #connect a {
+#connect a {
 	background-image: url(../images/sm-icons.png);
 	background-size: 160px 92px;
 	background-repeat:no-repeat;
@@ -275,34 +303,44 @@ fieldset{
 }
 /* Media queries for mobile view*/
 @media(max-width:600px){
-#name{
-	font-size: 55px;
+	#home{
+		background-position: center;
+		height: 500px;
+	}
+	#heading{
+		vertical-align: bottom;
+	}
+#name, #headName{
+	font-size: 44px;
 }
-#line{
-	font-size: 28px;
+#line, #headLine{
+	font-size: 22px;
 }
 img.novels{
 	display: none;
 }
 .container{
 		font-size: 16px;
+	    margin: 5px 0;
 	}
-	.flex-container{
+.flex-container{
 		width: 300px;
 		height: auto;
 		flex-direction: column;
 }
-	.flex-item{
+.flex-item{
 		width: 100%;
 		display: block;
 }
-img.item {
-width: 100%;
-height:300px;
-margin: 10px 0;
-	}
-img.location{
+.carousel-inner > .item > img {
+    width: 100%;
+	height:300px;
+        }
+#locationMap,ng-map{
 	height: 200px;
 	width: 100%;
 }
+	footer{
+		height: 180px;
+	}
 }

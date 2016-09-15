@@ -38,6 +38,7 @@ angular.module("OldBookShelf",['ngRoute'])
         templateUrl:'../views/hall-view.html'
     })
     .when('/contact',{
+		controller:"contactCtrl",
         templateUrl:'../views/contact-view.html'
     })
 	.when('/faq',{
@@ -69,5 +70,6 @@ angular.module("OldBookShelf",['ngRoute'])
     // To check if user is authenticated
     $rootScope.isAuthenticated = false;
     $rootScope.loggedInUser = null;
+	
 });
 

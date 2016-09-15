@@ -1,10 +1,85 @@
+<header id="heading">
+		<div id="headName">
+		Old Book Shelf
+		</div>
+		<div id="headLine">
+		Just give and Take
+		</div>
+		</header>
+<nav id="otherNav" class="navbar navbar-inverse" data-spy="affix" data-offset-top="170">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#/">Old Book Shelf</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+<ul class="nav navbar-nav">
+<li class="" ng-if="isAuthenticated"><a href="#/home">Home</a></li>
+<li id="mySignupBtn" class="" ng-if="!isAuthenticated"><a href="#/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li id="myLoginBtn" class="" ng-if="!isAuthenticated"><a href="#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<li ng-if="!isAuthenticated"><a href="#/working">How it Works</a></li>
+<li ng-if="isAuthenticated"><a href="#/about">About Us</a></li>
+<li class="" ng-if="isAuthenticated"><a href="#/donatebook">Send Book</a></li>
+<li ng-if="isAuthenticated"><a href="#/order">Order Book</a></li>
+	<li ng-if="isAuthenticated"><a href="#/hall">Hall of Fame</a></li>
+<li ng-if="isAuthenticated"><a href="#/contact">Contact Us</a></li>
+<li ng-if="isAuthenticated"><a href="#/faq">FAQ</a></li>
+<li ng-if="isAuthenticated"><a href="#/logout">Logout</a></li>
+</ul>
+                </div>
+            </div>
+        </nav>
+
+	<!--carousel begin-->
+	<div id="my-carousel" class="carousel slide" data-ride="carousel">	
+        <ol class="carousel-indicators">
+        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#my-carousel" data-slide-to="1"></li>
+        <li data-target="#my-carousel" data-slide-to="2"></li>
+        <li data-target="#my-carousel" data-slide-to="3"></li>
+        </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        <img src="../images/carousel/popularAuthors.JPG" class="item" alt="Popular Authors">
+            <div class="carousel-caption">
+            <h3>Popular Authors</h3>
+            </div>
+        </div>
+    <div class="item">
+        <img src="../images/carousel/popularBooks.JPG" class="item" alt="Popular Novels">
+            <div class="carousel-caption">
+            <h3>Popular Novels</h3>
+            </div>
+        </div>
+    <div class="item">
+        <img src="../images/carousel/longestNovels.JPG" class="item" alt="Longest Novels">
+            <div class="carousel-caption">
+            <h3>Longest Novels</h3>
+            </div>
+        </div>
+    <div class="item">
+        <img src="../images/carousel/shortestNovels.JPG" class="item" alt="Shortest Novels">
+            <div class="carousel-caption">
+            <h3>Shortest Novels</h3>
+            </div>
+        </div>
+        </div>
+    <span data-target="#my-carousel" class="carousel-control left" role="button" data-slide="prev">
+		<i class="glyphicon glyphicon-chevron-left"></i></span>
+    <span data-target="#my-carousel" class="carousel-control right" role="button" data-slide="next">
+        <i class="glyphicon glyphicon-chevron-right"></i></span>
+    </div>
+<!--end of carousel-->
 <div class="container"><h2>Hall of Fame</h2></div>
-<div class="container-fluid">
-<img src="../images/carousel/popularAuthors.JPG" class="img-responsive img-rounded item" alt="Popular Authors" data-toggle="tooltip" title="Popular Authors" data-placement="auto">
-<img src="../images/carousel/popularBooks.JPG" class="img-responsive img-rounded item" alt="Popular Books" data-toggle="tooltip" title="Popular Books" data-placement="auto">
-<img src="../images/carousel/longestNovels.JPG" class="img-responsive img-rounded item" alt="Longest Novels" data-toggle="tooltip" title="Longest Novels" data-placement="auto">
-<img src="../images/carousel/shortestNovels.JPG" class="img-responsive img-rounded item" alt="Shortest Novels" data-toggle="tooltip" title="Shortest Novels" data-placement="auto">
-</div>
 <h3>Here's the list of our book lovers who have read lots of books and exchanged for others</h3>
 <div class="container">
 <div class="flex-container">
